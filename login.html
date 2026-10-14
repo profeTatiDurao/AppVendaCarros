@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Auto Motors</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e3a5f);
+            color: #172033;
+        }
+
+        .cartao-login {
+            width: 100%;
+            max-width: 390px;
+            padding: 36px 30px;
+            text-align: center;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, .25);
+        }
+
+        .logo {
+            width: 76px;
+            height: 76px;
+            display: grid;
+            place-items: center;
+            margin: 0 auto 18px;
+            border-radius: 50%;
+            background: #2563eb;
+            color: #fff;
+            font-size: 38px;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: 28px;
+        }
+
+        .subtitulo {
+            margin: 0 0 26px;
+            color: #64748b;
+        }
+
+        .grupo-input {
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px #dbeafe;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 8px;
+            padding: 13px;
+            border: 0;
+            border-radius: 10px;
+            background: #2563eb;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        #mensagem {
+            min-height: 20px;
+            margin: 14px 0 0;
+            color: #dc2626;
+            font-size: 14px;
+        }
+
+        .link-cadastro {
+            color: #2563eb;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .link-cadastro:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="cartao-login">
+        <div class="logo" aria-label="Logo Auto Motors">🚗</div>
+        <h1>Login</h1>
+        <p class="subtitulo">Entre para acessar o catálogo</p>
+        <form id="form-login">
+            <div class="grupo-input"><label for="input-email">E-mail</label><input type="email" id="input-email"
+                    placeholder="voce@email.com" required></div>
+            <div class="grupo-input"><label for="input-senha">Senha</label><input type="password" id="input-senha"
+                    placeholder="Digite sua senha" required></div>
+            <button type="submit">Entrar</button>
+            <p id="mensagem" role="alert"></p>
+        </form>
+        <p>Ainda não tem cadastro? <a class="link-cadastro" href="cadastrato.html">Cadastrar</a></p>
+    </main>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
